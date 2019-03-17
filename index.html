@@ -55,6 +55,25 @@
 					{ src: 'plugin/accessibility/helper.js', async: true, condition: function() { return !!document.body.classList; } },
 				]
 			});
+
+			/* play video when fragment is active */
+			function playCurrentFragment() {
+				[].slice.call( document.querySelectorAll('.fragment') ).forEach(function(fragment) {
+
+					if(fragment.tagName == "VIDEO"){
+					var video = fragment;
+					if(video.classList.contains('current-fragment')) {
+						video.play();
+					}
+					else {
+						//video.pause();
+					}
+					}
+
+				});
+			}
+			Reveal.addEventListener( 'fragmentshown', playCurrentFragment );
+			Reveal.addEventListener( 'fragmenthidden', playCurrentFragment );
 		</script>
 	</body>
 </html>
