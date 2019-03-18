@@ -17,7 +17,7 @@
 - 😀 EPUB Accessibility 1.0 <!-- .element: class="fragment" -->
 - 🙂 WCAG Techniques <!-- .element: class="fragment" -->
 - 😐 Understanding WCAG <!-- .element: class="fragment" -->
-- 🙁 EPUB Accessbility Techniques <!-- .element: class="fragment" -->
+- 🙁 EPUB Accessibility Techniques <!-- .element: class="fragment" -->
 - 😫 ACT Rules Format <!-- .element: class="fragment" -->
 - 😭 Auto-WCAG Rules <!-- .element: class="fragment" -->
 - 🤯 … and more! <!-- .element: class="fragment" -->
