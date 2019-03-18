@@ -22,7 +22,7 @@ This is great! So all the accessibility stuff that works on the web should work 
 
 The ecosystem is complicated
 
-![Publishing supply chain](https://accessibility.jiscinvolve.org/wp/files/2017/02/ebookflow.jpg)
+![Publishing supply chain](assets/ebookflow.jpg)
 
 (from [JISC](https://accessibility.jiscinvolve.org/wp/))
 
@@ -111,7 +111,7 @@ A reading system might pop up a little box to show the footnote inline:
 
 Beyond this, though, there are no known implementations that provide an enhanced user experience via `epub:type`.
 
-We're not saying "don't use it"; we're saying "don't use only it." <!-- .element: class="fragment" -->
+Don't rely on it alone. <!-- .element: class="fragment" -->
 
 ---
 

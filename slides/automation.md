@@ -33,7 +33,13 @@ It's something like 30% though, so your a11y testing shouldn't start and end wit
 
 ### Ace by DAISY
 
-![Ace logo](https://daisy.github.io/ace/images/logo.svg)
+<style>
+img.ace {
+  border: 0px !important;
+  background-color: inherit !important;
+}
+</style>
+![Ace logo](assets/logo.svg) <!-- .element: class="ace" -->
 
 We wrote Ace to incorporate web a11y checking into an EPUB context. <!-- .element: class="fragment" -->
 

@@ -8,7 +8,7 @@ We just finished talking about how wonderful automated accessibility checking is
 
 But there are things that robots don't do well.
 
-![Robot pouring milk over cereal and missing by a lot](https://thumbs.gfycat.com/BareCheeryIriomotecat-size_restricted.gif)
+![Robot pouring milk over cereal and missing by a lot](assets/milkbot.gif)
 
 ---
 
@@ -97,7 +97,7 @@ And 5 hours later, you've got 25 browser tabs, 2 text editors, and 3 reading sys
 
 All you wanted to do was make your book accessible! It'll be easy, they said...
 
-![Infomercial: a person opening a cupboard and having tons of clutter fall on them.](https://img.buzzfeed.com/buzzfeed-static/static/2015-09/15/13/enhanced/webdr03/anigif_enhanced-9884-1442338881-2.gif)<!-- .element: class="fragment" -->
+![Infomercial: a person opening a cupboard and having tons of clutter fall on them.](assets/infomercial.gif)<!-- .element: class="fragment" -->
 
 ---
 
@@ -111,9 +111,9 @@ Manual testing takes time and patience and resources.
 
 SMART is a tool from DAISY. <!-- .element: class="fragment" -->
 
-It helps organize the accessibility testing checkpoints based on what features your publication has. <!-- .element: class="fragment" -->
+It walks you through checkpoints based on features in your publication. <!-- .element: class="fragment" -->
 
-It holds your hand and then generates a report. <!-- .element: class="fragment" -->
+It asks you some questions and then generates a report. <!-- .element: class="fragment" -->
 
 It works in conjunction with Ace. <!-- .element: class="fragment" -->
 
