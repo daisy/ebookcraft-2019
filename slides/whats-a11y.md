@@ -38,6 +38,8 @@ accessibility
 <dt>IoT</dt> <dd>images of text</dd>
 </dl>
 
+<small>hat tip to [@mattmay and others](https://twitter.com/mattmay/status/973605955417006086)</small>
+
 Notes:
 
 https://twitter.com/mattmay/status/973605955417006086
