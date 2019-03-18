@@ -79,7 +79,7 @@ Succes Criteria
 
 ---
 
-### EPUB Accessibily 1.0
+### EPUB Accessibility 1.0
 
 🔖 http://www.idpf.org/epub/latest/accessibility
 
@@ -92,7 +92,7 @@ Succes Criteria
 
 ### EPUB Accessibility Techniques 1.0
 
-🔖 http://www.idpf.org/epub/latest/accessibility
+🔖 http://www.idpf.org/epub/latest/accessibility/techniques
 
 <div class="fragment">
 <p>a.k.a.</p>
@@ -125,7 +125,7 @@ Succes Criteria
 
 ### ACT Rules for WCAG
 
-🔖 https://www.w3.org/TR/act-rules-format/
+🔖 https://auto-wcag.github.io/auto-wcag/
 
 <div class="fragment">
 <p>a.k.a.</p>
