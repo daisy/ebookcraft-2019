@@ -115,7 +115,7 @@ Let’s see the bright side: [a11y wins](https://a11ywins.tumblr.com)! 👍
 
 > Lately I like to replace "accessible" with "usable" in my mind. Because somehow folks think that accessible is optional but usable is not.
 >
-> – [@jessbeach](https://twitter.com/jessebeach/status/1050031919713243137)
+> – [@jessebeach](https://twitter.com/jessebeach/status/1050031919713243137)
 
 ---
 
