@@ -1,0 +1,50 @@
+/* LAYOUT */
+
+/* side by side */
+.reveal .side-by-side {
+  display: flex;
+  flex-direction: row;
+}
+
+/* LISTS */
+
+/* list with no-bullets */
+.reveal .no-bullets {
+  list-style-type: none;
+}
+.reveal .no-bullets li::before {
+  content: "\200B";
+}
+
+/* flat definition list */
+.reveal .flat-dl {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.reveal .flat-dl dt {
+  text-align: right;
+}
+
+/* TYPOGRAPHY */
+.reveal .smaller {
+  font-size: 0.6em;
+}
+
+/* EFFECTS */
+/* highlight with a big red cross */
+.reveal section .highlight-red.crossed.visible:after {
+  content: "";
+  display: block;
+  position: fixed; /* could also be absolute */ 
+  margin: auto;
+  top: 50px; left: 50px;
+  bottom: 50px; right: 50px;
+  background: url("data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='xMidYMid' viewBox='0 0 100 100'>\
+  <path d='M80 20 L20 80' stroke='red' stroke-width='3' stroke-linecap='round'/>\
+  <path d='M20 20 L80 80' stroke='red' stroke-width='3' stroke-linecap='round'/>\
+  </svg>");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size: 100% 100%, auto;
+}
