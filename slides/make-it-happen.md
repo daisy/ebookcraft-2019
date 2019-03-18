@@ -26,6 +26,20 @@
 
 ---
 
+(or: don’t be the WinDev of accessibility)
+
+<div class="side-by-side">
+  <span class="fragment"><img src="assets/windev-commitment.png" alt="screenshot of macmillan learning’s accessibility page"></span>
+  <span class="fragment"><img src="assets/windev-sexism.png" alt="screenshot of macmillan learning’s accessibility page"></span>
+</div>
+
+<!-- <div class="side-by-side">
+<img src="assets/windev-commitment.png" alt="a diversity statement by the WinDev developers"/>
+<img src="assets/windev-sexism.png" alt="the reality of their sexist brochures"/>
+</div> -->
+
+---
+
 ### Step 2: define accessibility requirements
 
 - for vendors
@@ -55,17 +69,23 @@ In 2016, Hachette Livre wrote an EPUB3 production charter which mandated the ado
 
 ---
 
-Bad news: Accessibility is hard
+Bad news 😔
+
+<p class="fragment">Accessibility is hard…</p>
 
 Note: true, thorough testing requires deep expertise. Need to hire specialists / Not a second thought.
 
 ---
 
-<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">I am amazed watching seasoned users of screen readers. It seems so clunky to me, but they whiz through it.</p>&mdash; Laura Brady (@LauraB7) <a href="https://twitter.com/LauraB7/status/1106543170244890624?ref_src=twsrc%5Etfw">15 mars 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+>I am amazed watching seasoned users of screen readers. It seems so clunky to me, but they whiz through it.
+>
+>– [Laura Brady (@LauraB7)](https://twitter.com/LauraB7/status/1106543170244890624)
 
 
 ---
 
-Good news: Accessibility is easy
+Good news 😁
+
+<p class="fragment">Accessibility is easy!</p>
 
 Note: baseline knowledge is easy to acquire, and useful everyday. will make you better

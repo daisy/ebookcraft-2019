@@ -5,7 +5,37 @@
   display: flex;
   flex-direction: row;
 }
+.reveal .side-by-side.two * {
+  max-width: 40%;
+  margin: 1em;
+}
 
+.reveal .image-cascade p {
+  position: fixed;
+  top: 50px;
+}
+
+.reveal .image-cascade img {
+  position: fixed;
+}
+.reveal .image-cascade .landscape {
+  width: 30%;
+}
+.reveal .image-cascade .portrait {
+  height: 30%;
+}
+.reveal .image-cascade img:nth-child(1) {
+  top: 20%;
+  left: 20%;
+}
+.reveal .image-cascade img:nth-child(2) {
+  top: 40%;
+  left: 40%;
+}
+.reveal .image-cascade img:nth-child(3) {
+  top: 60%;
+  left: 60%;
+}
 /* LISTS */
 
 /* list with no-bullets */
