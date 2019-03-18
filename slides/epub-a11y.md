@@ -2,54 +2,37 @@
 
 ---
 
-### A tale of two reading experiences
-
-DEMO accessible vs inaccessible reading experiences
-
----
-
-### Takeaway
-
-
-#### Yes ✅
-
-- Appropriate semantics
-- Accurate image descriptions
-- Contrast laws obeyed
-
-#### No 🚫
-
-- Lack of semantics or used incorrectly
-- Bad or nonexistent image descriptions
-- Poor contrast
-
----
-
 ### EPUB and the Web
 
-EPUB 3 is built on web languages (HTML, CSS)
+EPUB 3 is built on web languages (HTML, CSS) <!-- .element: class="fragment" -->
 
-And the web has extensive accessibility support (WAI, WCAG, ARIA, A11y Tree)
+And the web has extensive accessibility support (WAI, WCAG, ARIA, A11y Tree) <!-- .element: class="fragment" -->
 
-This is great! So all the accessibility stuff that works on the web should work in my EPUB? Yes but...
+This is great! So all the accessibility stuff that works on the web should work in my EPUB? Yes but... <!-- .element: class="fragment" -->
 
 ---
 
 ### Differences between EPUB and the Web when it comes to a11y
 
-Just to make sure we state the obvious: the ecosystem is complicated!
+  - Reading order: Unlike websites, books have a linear progression 	
+  - There's always a table of contents                                <!-- .element: class="fragment" -->
+  - Discovery metadata                                                <!-- .element: class="fragment" -->    
 
-And, conceptually, the material isn't quite the same.
+---
 
-  - Reading order: Unlike websites, books have a linear progression
-  - Explicit TOC
-  - Discovery metadata
+The ecosystem is complicated
+
+![Publishing supply chain](https://accessibility.jiscinvolve.org/wp/files/2017/02/ebookflow.jpg)
+
+(from [JISC](https://accessibility.jiscinvolve.org/wp/))
 
 ---
 
 ### Devils and details
 
-Let's dig in to some of the specifics regarding what you can do to optimize your usage of EPUB accessibility features.
+😈
+
+Specific ways you can optimize your usage of EPUB accessibility features.
 
 ---
 
@@ -57,30 +40,27 @@ Let's dig in to some of the specifics regarding what you can do to optimize your
 
 Enables users to choose where to go in the content.
 
-This is a very important mechanism for non-visual readers.
+This is a very important mechanism for non-visual readers. <!-- .element: class="fragment" -->
 
 ---
 
 ### Putting yourself out there
 
-Show off your accessibility features!
+Show off your accessibility features
 
-.. with discovery metadata in the package document.
-
-    <meta property="schema:accessMode">textual</meta>
-    <meta property="schema:accessibilityHazard">flashing</meta>
-    <meta property="schema:accessibilityFeature">alternativeText</meta>
-    <meta property="schema:accessibilitySummary">
-       The publication is missing alternative text for complex diagrams.
-       The publication otherwise meets WCAG 2.0 Level A.
-    </meta>
-
+with discovery metadata in the package document. <!-- .element: class="fragment" -->
+```
+<meta property="schema:accessMode">textual</meta>
+<meta property="schema:accessibilityHazard">flashing</meta>
+<meta property="schema:accessibilityFeature">alternativeText</meta>
+```
+<!-- .element: class="fragment" style="width: 100%" -->
 
 ---
 
-### So what's your type?
+### So like, what's your type?
 
-And why it might not impact what you think it does.
+And why it might not impact what you think it does. <!-- .element: class="fragment" -->
 
 ---
 
@@ -88,7 +68,20 @@ And why it might not impact what you think it does.
 
 The `epub:type` attribute was introduced in EPUB 3 as a way to extend semantics.
 
-Values come from EPUB 3's extensive structural semantics vocabulary.
+Values come from EPUB 3's extensive structural semantics vocabulary. <!-- .element: class="fragment" -->
+
+---
+
+The promise of `epub:type` was to extend a generic XHTML element with publishing-specific refinements.
+
+```
+<div epub:type="prologue">"Lorem ipsum dolor," he thought.</div>
+```
+  <!-- .element: class="fragment" -->
+
+---
+
+And then, reading systems could expose this information to users, which would really enhance accessibility.
 
 ---
 
@@ -96,9 +89,9 @@ Values come from EPUB 3's extensive structural semantics vocabulary.
 
 You can very thoroughly add `epub:type` everywhere, but you'll notice that the reading experience doesn't change.
 
-Why?
+Why? <!-- .element: class="fragment" -->
 
-It was never really adopted by reading systems 🤷‍♀️
+It was never really adopted by reading systems 🤷‍♀️ <!-- .element: class="fragment" -->
 
 ---
 
@@ -106,12 +99,19 @@ It was never really adopted by reading systems 🤷‍♀️
 
 A reading system might pop up a little box to show the footnote inline:
 
-    <p>lorum ipsum.<a epub:type="noteref" href="#fn01">1</a></p>
-    <aside epub:type="footnote">
-    …
-    </aside>
+```
+<p>lorum ipsum.<a epub:type="noteref" href="#fn01">1</a></p>
+<aside epub:type="footnote">
+…
+</aside>
+```
+<!-- .element: class="fragment" -->
+
+---
 
 Beyond this, though, there are no known implementations that provide an enhanced user experience via `epub:type`.
+
+We're not saying "don't use it"; we're saying "don't use only it." <!-- .element: class="fragment" -->
 
 ---
 
@@ -119,37 +119,66 @@ Beyond this, though, there are no known implementations that provide an enhanced
 
 Remember how we talked about EPUB leveraging web accessibility?
 
-The web has a feature called `ARIA`, designed specifically for making content more accessible.
+---
 
-`ARIA` consists of roles, features, and properties. And, of course, rules for how to use it.
+The W3C created ARIA specifically for making content more accessible.
 
-Let's see how `epub:type` and `ARIA` are related.
+ARIA consists of roles, features, and properties. <!-- .element: class="fragment" -->
+
+And, of course, rules for how to use it. <!-- .element: class="fragment" -->
+
+```
+<div role="checkbox"
+     aria-checked="false"
+     tabindex="0">
+  ...
+</div>
+```
+<!-- .element: class="fragment" -->
+
+---
+
+Let's see how `epub:type` and ARIA are related.
 
 ---
 
 ### Roleplay
 
-ARIA roles and labels:
+There's a set of digital publishing roles for ARIA (ARIA DPUB).
 
-    <section role="chapter" aria-label="chapter 1">
-      <p>Once upon a time …</p>
-      …
-    </section>
+E.g. <!-- .element: class="fragment" -->
 
-But, it's not a 1-1 mapping!
+```
+<section role="chapter" aria-label="chapter 1">
+  <p>Once upon a time …</p>
+  …
+</section>
+```
+<!-- .element: class="fragment" -->
 
-    <body epub:type="cover">
-      <h1>Sports!</h1>
-      <img src="cover.jpg" alt="An olympic athlete in mid-pole vault"/>
-    </body>
+---
 
-vs
+But, be careful -- don't assume a 1-1 mapping between `epub:type` and ARIA
 
-    <body epub:type="cover">
-      <h1>Sports!</h1>
-      <img role="doc-cover" src="cover.jpg" alt="An olympic athlete in mid-pole vault"/>
-    </body>
+```
+<body epub:type="cover">
+  <h1>Sports!</h1>
+  <img src="cover.jpg" alt="An olympic athlete in mid-pole vault"/>
+</body>
+```
+<!-- .element: class="fragment" -->
 
+vs <!-- .element: class="fragment" -->
+
+```
+<body epub:type="cover">
+  <h1>Sports!</h1>
+  <img role="doc-cover" src="cover.jpg" alt="An olympic athlete in mid-pole vault"/>
+</body>
+```
+<!-- .element: class="fragment" -->
+
+---
 
 Handy reference: [EPUB ARIA Authoring](https://idpf.github.io/epub-guides/epub-aria-authoring/)
 
@@ -159,4 +188,4 @@ Handy reference: [EPUB ARIA Authoring](https://idpf.github.io/epub-guides/epub-a
 
 What are some accessibility issues you're facing?
 
-What solutions have you tried that have helped?
+What solutions have you tried that have[n't] helped?
