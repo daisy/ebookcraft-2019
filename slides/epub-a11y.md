@@ -2,6 +2,58 @@
 
 ---
 
+### A tale of two reading experiences
+
+This is a video of a user navigating the headings of a book with a screenreader.
+
+---
+
+<video src="assets/lean-bad-headings-screencast.mov"/>
+
+---
+
+Seemed ok, right? I mean, the contrast is awful, but there were a few headings and some text? So it looks like it's working?
+
+---
+
+But then again, how would we know what we were missing if the AT didn't pick up on it?
+
+---
+
+<video src="assets/lean-bad-headings-screencast.mov"/>
+
+---
+
+I notice a lot of pages between headings. That would be a lot of skimming. I wish there headings more often than every 30 pages.
+
+---
+
+Oh wait, there are more headings! But they were marked up incorrectly, so the screenreader never found them.
+
+---
+
+Magic fixes ..
+
+..<!-- .element: class="fragment" -->
+
+..<!-- .element: class="fragment" -->
+
+---
+
+<video src="assets/lean-fixed-screencast.mov"/>
+
+---
+
+### Let's take a moment
+
+To acknowledge the importance of hiring accessibility testers.
+
+Testing with AT is not easy if you're not an expert user.
+
+E.g. making those 10 second screenreader videos took me forever.
+
+---
+
 ### EPUB and the Web
 
 EPUB 3 is built on web languages (HTML, CSS) <!-- .element: class="fragment" -->
