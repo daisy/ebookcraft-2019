@@ -1,3 +1,14 @@
+- What’s a11y?
+- How to make it happen?
+- All your guidelines
+- Behold: accessible EPUB
+- Automatic for the people
+- Manual checking <!-- .element: class="selected" -->
+
+<!-- .element: class="toc no-bullets" -->
+
+---
+
 ## Manual checking: blood, sweat, and .. oh that wasn't so bad
 
 ---

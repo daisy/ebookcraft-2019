@@ -1,3 +1,14 @@
+- What’s a11y?
+- How to make it happen?
+- All your guidelines
+- Behold: accessible EPUB
+- Automatic for the people <!-- .element: class="selected" -->
+- Manual checking
+
+<!-- .element: class="toc no-bullets" -->
+
+---
+
 ## Automatic for the people
 
 ---

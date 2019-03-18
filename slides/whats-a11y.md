@@ -1,3 +1,14 @@
+- What’s a11y? <!-- .element: class="selected" -->
+- How to make it happen?
+- All your guidelines
+- Behold: accessible EPUB
+- Automatic for the people
+- Manual checking
+
+<!-- .element: class="toc no-bullets" -->
+
+---
+
 ## What's A11y?
 
 ---
