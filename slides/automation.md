@@ -5,9 +5,9 @@
 ### Can't a robot just do it for me?
 
 <div style="display: flex">
-<img alt="R2D2" src="https://cdn.pixabay.com/photo/2017/08/30/16/09/r2d2-2697651_1280.png" class="fragment"/>
-<img alt="Short Circuit" src="https://c7.alamy.com/comp/F6FDMA/release-date-july-6-1988-movie-title-short-circuit-2-studio-tristar-F6FDMA.jpg" class="fragment"/>
-<img alt="Roomba vacuum" src="https://farm4.staticflickr.com/3624/13058954093_dba1a59a96_k.jpg" class="fragment"/>
+<img alt="R2D2" src="assets/r2d2.png" class="fragment"/>
+<img alt="Short Circuit" src="assets/short-circuit.jpg" class="fragment"/>
+<img alt="Roomba vacuum" src="assets/roomba.jpg" class="fragment"/>
 </div>
 
 

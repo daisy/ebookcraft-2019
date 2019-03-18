@@ -87,6 +87,8 @@ span.extraa {
 <span class="fragment">Video?</span> <span class="fragment">Audio?</span> <span class="fragment">Text?</span> <span class="fragment">Images?</span> <span class="fragment extra">Captions?</span> <span class="fragment extra">Tables?</span> <span class="fragment extra">Stylish but illegible fonts?</span> <span class="fragment extra extraa">Print page equivalents?</span> <span class="fragment extra extraa">Media overlays?</span>
 </p>
 
+Just to name a few. <!-- .element: class="fragment" -->
+
 ---
 
 And 5 hours later, you've got 25 browser tabs, 2 text editors, and 3 reading systems open; and you're not sure if this was really a good idea.
